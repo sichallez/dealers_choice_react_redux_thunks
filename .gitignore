@@ -1,0 +1,5 @@
+node_modules
+package-lock.json
+MuseumPasses.js.backup
+store.js.backup
+dist

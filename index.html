@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script src='/dist/main.js' defer></script>
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-around;
+      }
+      .booked {
+        text-decoration: line-through;
+      }
+      div > input.booked {
+        background-color:#3A5472;
+      }
+      nav a.selected {
+        font-weight: bold;
+      }
+      li {
+        padding: 5px;
+        background-color:#3a7072; 
+        color:#fff;
+        width: 30%;
+      }
+      div > input {
+        padding-left: 10px;
+        margin: 10px;
+        width:40%; 
+        text-align:left; 
+        background-color:#3a7072; 
+        color:#fff; 
+    	  height:2rem; 
+        white-space:normal !important;
+        border: none;
+        display: inline-block;
+      }
+      button.button {
+        cursor: pointer;
+        background-color: #3a7072;
+      }
+      button.booked {
+        background-color:#3A5472;
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='root'></div>
+    <script>
+          let btn = document.getElementsByClassName("button");
+          console.log(btn)
+          btn.innerHTML= "BOOKED";
+    </script>
+  </body>
+</html>
