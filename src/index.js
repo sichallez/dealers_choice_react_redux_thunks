@@ -5,7 +5,6 @@ import axios from 'axios';
 import Nav from './Nav';
 import store, { fetchMuseums } from './store';
 import MuseumPasses from './MuseumPasses';
-import CreateForm from './CreateForm';
 
 
 class _App extends Component{
@@ -22,7 +21,6 @@ class _App extends Component{
       <div>
         <h1>Libary Museum Pass Reservation System</h1>
         <Nav />
-        <CreateForm />
         <MuseumPasses />
       </div>
     );

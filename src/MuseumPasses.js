@@ -6,7 +6,7 @@ import { createMuseum, changeToBooked } from './store';
 const _MuseumPasses = ({ museums, view, changeToBooked, create })=> {
   return (
     <div>
-      <button onClick={ create }>Create</button>
+      <button onClick={ create }>Create A Random Pass!</button>
       <ul>
         {
           museums.filter(museum => !view || ( museum.booked && view === 'booked') ||( !museum.booked && view === 'available') ).map( museum => {
